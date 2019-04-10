@@ -109,7 +109,7 @@ def read_ue_arg():
     B BYTE        ucRuBrokenByPrach
     :return:
     '''
-    filepath = 'C:\\Users\\10203524\\Desktop\\PHY_DATA\\data1402\\dat_20190221115847218\\Cell82_Cp0_BBDA_00_CellDemInfo15K_192.254.3.30_14_0.dat'
+    filepath = '14_0.dat'
     with open(filepath) as fp:
         data = [line.split('\n')[0] for line in fp.readlines() if line.startswith('0x')]
         print data
